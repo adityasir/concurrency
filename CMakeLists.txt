@@ -1,10 +1,8 @@
 cmake_minimum_required(VERSION 3.12)
 project(CombinedProjects)
 
-# Function to build a project based on command line arguments
-function(build_project PROJECT_NAME)
-    add_subdirectory(${PROJECT_NAME})
-endfunction()
+# Add the lock_based directory
+add_subdirectory(lock_based)
 
 # Set the available projects
 set(PROJECT_OPTIONS "lock_based" "lock_free")
