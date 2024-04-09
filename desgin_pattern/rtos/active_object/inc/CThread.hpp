@@ -22,7 +22,7 @@ CThread(void *(*thread_func)(void *), void *arg = nullptr,
         // Handle signal action error
     }
 
-    set_priority(priority);  // Call after priority member initialization
+    set_priority(priority);
 }
 
     ~CThread() {
@@ -37,7 +37,7 @@ CThread(void *(*thread_func)(void *), void *arg = nullptr,
         }
         return nullptr;
     }
-
+    const pthread_t get_handle() const { return thread;}
 protected:
     int priority;  // Store priority for potential adjustment
 
@@ -50,7 +50,8 @@ protected:
         }
     }
 
-    virtual void run() = 0; // Pure virtual function for thread's main logic
+    /*Pure virtual function for thread's main logic */
+    virtual void run() = 0;
 
 private:
     pthread_t thread; // Thread handle
