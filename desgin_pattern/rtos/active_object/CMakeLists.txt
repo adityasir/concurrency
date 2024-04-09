@@ -18,6 +18,7 @@ set(SOURCE_FILES
 set(HEADER_FILES
     inc/CThread.hpp
     inc/CThreadException.hpp
+    inc/CThreadControl.hpp
     #include/event.h
     # Add other header files here
 )
