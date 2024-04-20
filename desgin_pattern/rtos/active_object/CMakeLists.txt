@@ -8,7 +8,6 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -g")  # Enable warnings an
 # Source files
 set(SOURCE_FILES
     main.cpp
-    #src/event.cpp
     #src/event_thread.cpp
     #src/interrupt_handler.cpp
     # Add other source files here

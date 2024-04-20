@@ -31,6 +31,9 @@ private:
  ThreadControl &c;
 };
 
+
+
+
 int main() {
     ThreadControl &c = ThreadControl::GetInstance();
     MyThread trd(c);
