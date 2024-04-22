@@ -1,7 +1,7 @@
-        C++ Thread Priority Management (std_thread_prority.cpp)
-...............................................................................
+        C++ Thread Priority Management
 
 Introduction:
+==============
 
 This repository contains the source code for a C++ program (std_thread_prority.cpp) that demonstrates how to manage thread priorities in a Linux environment using the POSIX thread library (pthread).
 
